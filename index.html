@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Bogo Banner -->
+        <div class="bogo-banner">
+            <div class="line"></div>
+            <h1 class="banner-header">YAY! It's BOGO</h1>
+            <div class="line"></div>
+        </div>
+
+        <!-- 1 Unit Option -->
+        <div class="box" id="box1" onclick="activateBox('box1', 10)">
+            <div class="header">
+                <div>
+                    <input type="radio" name="units" id="oneUnit">
+                    <label for="oneUnit">1 Unit
+                        <span class="discount">10% Off</span>
+                    </label>
+                </div>
+                <p class="price">$10.00 USD</p>
+            </div>
+            <div class="del-price">
+                <del>$24.00 USD</del>
+            </div>
+            <div class="details" id="details1">
+                <div class="details-header">
+                    <div>Size</div>
+                    <div>Colour</div>
+                </div>
+                <div class="details-row">
+                    <div>#1</div>
+                    <select class="dropdown" name="size1">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select class="dropdown" name="color1">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2 Unit Option (Most Popular, Default Active) -->
+        <div class="box most-popular" id="box2" onclick="activateBox('box2', 18)">
+            <div class="header">
+                <div>
+                    <input type="radio" name="units" id="twoUnit" checked>
+                    <label for="twoUnit">2 Unit
+                        <span class="discount">20% Off</span>
+                    </label>
+                </div>
+                <p class="price">$18.00 USD</p>
+            </div>
+            <div class="del-price">
+                <del>$24.00 USD</del>
+            </div>
+
+            <div class="most-popular-tag">Most Popular</div>
+
+            <div class="details" id="details2">
+                <div class="details-header">
+                    <div>Size</div>
+                    <div>Colour</div>
+                </div>
+                <div class="details-row">
+                    <div>#1</div>
+                    <select class="dropdown" name="size1">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select class="dropdown" name="color1">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+                <div class="details-row">
+                    <div>#2</div>
+                    <select class="dropdown" name="size2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select class="dropdown" name="color2">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3 Unit Option -->
+        <div class="box" id="box3" onclick="activateBox('box3', 24)">
+            <div class="header">
+                <div>
+                    <input type="radio" name="units" id="threeUnit">
+                    <label for="threeUnit">3 Unit
+                        <span class="discount">30% Off</span>
+                    </label>
+                </div>
+                <p class="price">$24.00 USD</p>
+            </div>
+            <div class="del-price">
+                <del>$24.00 USD</del>
+            </div>
+            <div class="details" id="details3">
+                <div class="details-header">
+                    <div>Size</div>
+                    <div>Colour</div>
+                </div>
+                <div class="details-row">
+                    <div>#1</div>
+                    <select class="dropdown" name="size1">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select class="dropdown" name="color1">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+                <div class="details-row">
+                    <div>#2</div>
+                    <select class="dropdown" name="size2">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select class="dropdown" name="color2">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+                <div class="details-row">
+                    <div>#3</div>
+                    <select class="dropdown" name="size3">
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                    <select class="dropdown" name="color3">
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Delivery Section -->
+        <div class="delivery">
+            <p class="delivery-text">Free Delivery</p>
+            <p>Total:<span id="total : "> $18.00 USD </span></p>
+        </div>
+        <div class="add-btn">
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
