@@ -15,7 +15,7 @@ function activateBox(boxId, price) {
     document.querySelector(`#${boxId} input[type="radio"]`).checked = true;
 
     // Update total price
-    document.getElementById('total : ').innerText = `$${price}.00 USD`;
+    document.getElementById('total').innerText = `$${price}.00 USD`;
 }
 
 // Set box2 (Most Popular) as default active on page load
